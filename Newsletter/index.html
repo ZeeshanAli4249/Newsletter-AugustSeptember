@@ -1,0 +1,2438 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="utf-8">
+  <!-- utf-8 works for most cases -->
+  <meta name="viewport" content="width=device-width">
+  <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Use the latest (edge) version of IE rendering engine -->
+  <meta name="x-apple-disable-message-reformatting">
+  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+  <title></title>
+  <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+      background: #f1f1f1;
+      font-family: 'Maven Pro';
+    }
+
+    .three-columns {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .three-columns .column {
+      width: 100%;
+      max-width: 186px;
+      display: inline-block;
+      vertical-align: top;
+
+    }
+
+    .three-columns .padding {
+      padding: 0px 10px;
+    }
+
+
+    .button {
+      display: block;
+      width: 60%;
+      height: auto;
+      padding: 15px 0px;
+      margin: 0 auto;
+      background-color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      color: black;
+      text-transform: uppercase;
+    }
+
+    .mybutton {
+      display: block;
+      width: 55%;
+      height: auto;
+      padding: 15px 0px;
+      margin: 0 auto;
+      background-color: #A10003;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      color: white;
+      text-transform: uppercase;
+    }
+
+
+    /* What it does: Stops email clients resizing small text. */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* What it does: Centers email on Android 4.4 */
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+    td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+
+    /* What it does: Fixes webkit padding issue. */
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+      margin: 0 auto !important;
+    }
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+
+    /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+    a {
+      text-decoration: none;
+    }
+
+    /* What it does: A work-around for email clients meddling in triggered links. */
+    *[x-apple-data-detectors],
+    /* iOS */
+    .unstyle-auto-detected-links *,
+    .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+    .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+    }
+
+    /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+    .im {
+      color: inherit !important;
+    }
+
+    /* If the above doesn't work, add a .g-img class to any image in question. */
+    img.g-img+div {
+      display: none !important;
+    }
+
+
+
+    /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+    /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+    /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+      u~div .email-container {
+        min-width: 320px !important;
+      }
+    }
+
+    /* iPhone 6, 6S, 7, 8, and X */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      u~div .email-container {
+        min-width: 375px !important;
+      }
+    }
+
+    /* iPhone 6+, 7+, and 8+ */
+    @media only screen and (min-device-width: 414px) {
+      u~div .email-container {
+        min-width: 414px !important;
+      }
+    }
+
+    @media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
+      .myspan {
+        font-size: 7.8vw !important;
+      }
+      .unique_para{
+        font-size: 4.5vw !important;
+      }
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+      .myspan {
+        font-size: 9.8vw !important;
+      }
+      .unique_para{
+        font-size: 6.5vw !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
+  <center style="width: 100%; background-color: #f1f1f1;">
+
+    <div style="max-width: 650px; margin: 0 auto;" class="email-container">
+
+      <!-- Page 1 -->
+      <!-- Cover Page -->
+      <!-- With Red Background -->
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin:0 auto;background: #fff;  ">
+        <tbody>
+          <tr>
+            <td style="padding: 0em 3em; background: #A10003; color: white;">
+              <p style="font-size: 3vw; font-weight: 400; text-transform: uppercase; " class="unique_para">Welcome to
+                MAMMOTH-AI
+                Monthly <br> <span class="myspan"
+                  style="font-size: 5.6vw; font-weight: 700;line-height: 72px;">Newsletter!</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 3em 3.2em;text-align: center;background:black;">
+              <img src="group (3).PNG" alt="" style="width: 100%; max-width: 650px;">
+            </td>
+          </tr>
+
+
+          <tr>
+            <td style="padding: 0em 2.5em 2em 2.5em; background:black;">
+              <img src="logo (2).png" alt="" height="100px" width="175px">
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <!-- Adjust Triangle with Positions -->
+
+      <center style="width: 100%; background-color: black;">
+        <div style="width: 100%;">
+          <table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tbody>
+              <tr style="position: relative;">
+                <td style="position: absolute; bottom: 0; right: 0;">
+                  <img src="Vector 1.png" alt="" height="160px" width="220px">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </center>
+
+
+      <!-- Page 2 -->
+      <!-- With White Background -->
+      <!-- Dear Mammoth-AI team, -->
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin:0 auto;background: white;">
+        <tbody>
+      
+          <tr>
+            <td style="text-align: right; background-color:white; padding:0 3em">
+              <p style="color:#000; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color: black;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:white">
+        <tbody>
+          <tr style="height: 40px; background-color: white;"></tr>
+          <tr>
+            <td style="">
+              <p style="font-size: 28px; font-weight: 700; text-transform: uppercase;padding:0.7em 1.8em;
+              background-color: #A10003; color: white; width:auto; max-width: 470px;">
+                Welcome to the 2nd Edition
+                of the Monthly Newsletter!
+              </p>
+            </td>
+          </tr>
+          <tr style="height: 10px; background-color: white;"></tr>
+          <tr>
+            <td style="padding: 0 3em;">
+              <p style="font-size: 17px; font-weight: 500; line-height: 22px; ">
+                Dear Mammoth-AI team,
+              </p>
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px;">
+                Welcome to the August-September 2023 bi-monthly newsletter!
+              </p>
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px;">
+                In this issue, we celebrate our recent accomplishments, share insights from our team members, and
+                provide updates on our upcoming projects and initiatives.
+              </p>
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px;">
+                We are grateful for your collective dedication and steadfast commitment in making Mammoth-AI the dynamic
+                powerhouse it is today. Let's continue to support and uplift one another, fostering a workplace where
+                diversity is celebrated and every voice is valued.
+              </p>
+              <p style="font-size: 17px; font-weight: 500; line-height: 22px;color: black;">
+                Best Regards,<br>
+                Marium Fatima
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="icon (2).png" alt="" height="54px" width="163px" style=" padding: 1em 3em 3em 3em;">
+            </td>
+          </tr>
+          <tr style="height: 150px;"></tr>
+        </tbody>
+      </table>
+
+
+
+      <!-- Page 3 -->
+      <!-- With Red Background -->
+      <!-- Event Highlights -->
+      <!-- CELEBRATING UNITY AND ACHIEVEMENT AT MAMMOTH-AI'S YEARLY DINNER 2023 -->
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin:0 auto;background: white;">
+        <tbody>
+          <tr>
+            <td style="background-color: #A10003; padding: 0 3em;">
+              <p style="color:white; font-size: 16px; font-weight: 500; line-height:20px;">
+                Event Highlights
+              </p>
+            </td>
+            <td style="text-align: right; background-color:#A10003; padding:0 3em">
+              <p style="color:white; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color: white"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:#A10003">
+        <tbody>
+          <tr style="height: 40px; background: #A10003;"></tr>
+          <tr>
+            <td style="">
+              <p style="font-size: 28px; font-weight: 700;text-transform: uppercase;padding:0.7em 1.8em;
+              background-color: white; color: black; width:auto; max-width: 470px;">
+                Celebrating Unity and
+                Achievement at Mammoth-AI's
+                Yearly Dinner 2023
+              </p>
+            </td>
+          </tr>
+          <tr style="height: 10px; background-color: white;"></tr>
+          <tr>
+            <td style="padding: 0 3em;">
+
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px; color: white;">
+                Amidst much excitement, our yearly dinner on August 6th, 2023,
+                held at the Luxus Grand Hotel, shines as the highlight of the year.
+                The Mammoth-AI family came together for this special event,
+                celebrating all that we have achieved as a team. It was a heartfelt
+                salute to the effort and hard work of every individual.
+                Our senior leaders took the stage, sharing inspiring words and
+                gratitude for the entire Mammoth-AI crew. Joy and laughter filled
+                the air as we enjoyed each other's company, making our workplace
+                bonds even stronger. The evening was a mix of fun and music,
+                creating a super happy atmosphere. The peak of the night was the
+                awards ceremony, recognizing those who have stood by the
+                company's growth and the top achievers who went above and
+                beyond. As we look back on this enchanting evening, let's carry its
+                spirit forward, continuing to thrive as one big, joyful Mammoth-AI
+                family.
+              </p>
+
+            </td>
+          </tr>
+          <td style="padding: 1em 3em 3em 3em;">
+            <img src="team.png" alt="" style="width: 100%; max-width: 650px;">
+          </td>
+        </tbody>
+      </table>
+
+
+      <!-- Page 4 -->
+      <!-- With White Background -->
+      <!-- A DAY OF UNITY, PATRIOTISM, AND CELEBRATION-INDEPENDENCE DAY -->
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin:0 auto;background:white;">
+        <tbody>
+          <tr>
+            <td style="text-align: right; background-color:white; padding:0 3em">
+              <p style="color:#000; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color: black;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:white">
+        <tbody>
+          <tr style="height: 40px; background-color: white;"></tr>
+          <tr>
+            <td>
+              <p style="font-size: 28px; font-weight: 700; text-transform: uppercase;padding:0.7em 1.8em;
+              background-color: #A10003; color: white;width:auto; max-width: 480px;">
+                A Day of Unity, Patriotism, and
+                Celebration-Independence Day
+              </p>
+            </td>
+          </tr>
+          <tr style="height: 10px; background-color: white;"></tr>
+          <tr>
+            <td style="padding: 0 3em;">
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px;">
+                The day was filled with enthusiasm and pride as we honored the
+                struggles and sacrifices that led us to where we are today. Our
+                workplace was adorned with patriotic decorations, fostering unity
+                and joy. We engaged in various celebratory activities, with coworkers
+                sharing meaningful notes about the significance of freedom.
+                Additionally, we embraced our flag's colors through painting and
+                attire to display our profound love for our nation.
+              </p>
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px;">
+                We want to say congratulations to SQA Automation (Ali Afzal's team)
+                for getting 1st place on their floor decoration. SQA Automation
+                (Bilal Javaid’s team) got 2nd place, and SQA Manual (Jawad Arif’s
+                team) got 3rd place. They worked really hard to make their floors
+                look the best.
+              </p>
+
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 1em 3em 3em 3em;">
+              <img src="combine.png" alt="" style="width: 100%; max-width: 750px;">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <!-- Page 5 -->
+      <!-- With Red Background -->
+      <!-- HR corner: -->
+      <!-- New Hiring: -->
+
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background: white;">
+        <tbody>
+          <tr>
+            <td style=" background-color:#A10003;  padding:0 3em">
+              <p style="color:white; font-size: 16px; font-weight: 500; line-height:20px;">
+                HR corner:
+              </p>
+            </td>
+            <td style="text-align: right; background-color:#A10003;  padding:0 3em">
+              <p style="color:white; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color:white;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background:#A10003">
+        <tbody>
+          <tr style="height: 40px; background: #A10003;"></tr>
+          <tr>
+
+            <td>
+              <p style="font-size: 28px; font-weight: 700;  
+              text-transform: uppercase;padding:0.6em 1.8em;width: auto; max-width: 
+              190px; background-color: white; color: black;">
+                New Hiring:
+              </p>
+            </td>
+
+          </tr>
+          <tr style="height: 10px; background-color: white;"></tr>
+          <tr>
+            <td style="padding: 0 3em;">
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px; color: white;">
+                For the Month of August and September, we have had the pleasure of bringing aboard a group of
+                exceptionally talented individuals who are ready to contribute their skills and expertise to our
+                company. Please join us in greeting them with open arms as they embark on this exciting journey with us!
+              </p>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="zain.png" alt="" width="100%" style="max-width: 165px;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Zain Ul Abdeen</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Associate SQA
+                            Engineer</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="talha.png" alt="" width="100%" style="max-width: 165px;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Muhammad Talha</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">BD Executive</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="hareem.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Hareem Ali Malik</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Associate SQA
+                            Engineer</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+
+          </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="usman.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Usman Sadiq</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Development Intern
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="aroob.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Aroob Waseem</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Cyber Security</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Hafiz.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Muhammad Faraz</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Pr. SQA Engineer</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <tr style="height: 30px;"></tr>
+
+        </tbody>
+      </table>
+
+      <!-- Page 6 -->
+      <!-- With White Background -->
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background: white;">
+        <tbody>
+          <tr>
+            <td style="text-align: right; background-color:white; padding:0 3em">
+              <p style="color:#000; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color: black;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:white">
+        <tbody>
+
+          <tr style="height: 30px; background-color: white;"></tr>
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Zahid.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color:black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Asad Ullah Zahid</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Associate SQA
+                            Engineer
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Shanzey.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Shanzey Fayyaz</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Associate SQA
+                            Engineer</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Laiba.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Laiba Saleem</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Associate SQA
+                            Engineer</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Zubaida .png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Zubaida Jabbar</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Associate Project
+                            Manager</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Sumaiyyah.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Sumaiyyah Tahir</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Software Engineer
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <tr style="height: 10px; background-color: white;"></tr>
+
+          <!-- Employee Announcements -->
+
+          <tr>
+            <td>
+              <p style="font-size: 28px; font-weight: 700; text-transform: uppercase;padding:0.7em 1.8em;
+            background-color: #A10003; color: white;width:auto; max-width: 460px; margin: 0 auto;text-align: center;">
+                Employee Announcements
+              </p>
+            </td>
+          </tr>
+          <tr style="height: 30px; background-color: white;"></tr>
+          <tr>
+            <td style="padding: 0 3em;">
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px;">
+                We take great pride in recognizing our Long-Term Commitment Awardees and Best Achievement Awardees,
+                including our Employee of the Month recipient! These outstanding individuals personify our company's
+                values and vision, consistently showcasing their loyalty, commitment, and exceptional accomplishments.
+              </p>
+            </td>
+          </tr>
+          <tr style="height: 30px; background-color: white;"></tr>
+
+
+
+        </tbody>
+      </table>
+
+      <!-- Page 7 -->
+      <!-- With Red Background -->
+      <!-- Long Term Commitment Awards -->
+
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background: white;">
+        <tbody>
+          <tr>
+            <td style="text-align: right; background-color:#A10003;  padding:0 3em">
+              <p style="color:white; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color:white;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background:#A10003">
+        <tbody>
+
+          <tr style="height: 30px; background-color: white;"></tr>
+
+          <tr>
+            <td style="text-align: center;margin: 0 auto;">
+              <button class="button">
+                Long Term Commitment Awards
+              </button>
+            </td>
+          </tr>
+
+          <tr style="height: 30px; background-color: white;"></tr>
+
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="ruth.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Ruth Lavaro</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="neelam.png" alt="" width="100%" style="max-width: 165px;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color:white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Neelam Iqbal Toor</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="jawad.png" alt="" width="100%" style="max-width: 165px;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Jawad Arif</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+
+          </td>
+          </tr>
+
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="ali afzal .png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Ali Afzal</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="ayesha.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color:white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Ayesha Ahmad</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Asim Ali 1.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Asim Ali</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="aswad.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Aswad Khan</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="umer.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Umer Suhail</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <tr style="height: 20px; background-color: white;"></tr>
+
+        </tbody>
+      </table>
+
+
+      <!-- Page 8 -->
+      <!-- With White Background -->
+      <!-- Best Achievement Awards -->
+
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background: white;">
+        <tbody>
+          <tr>
+            <td style="text-align: right; background-color:white; padding:0 3em">
+              <p style="color:#000; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color: black;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:white">
+        <tbody>
+
+          <tr style="height: 30px; background-color: white;"></tr>
+          <tr>
+            <td style="text-align: center; margin: 0 auto;">
+              <button class="mybutton">
+                Best Achievement Awards
+              </button>
+            </td>
+          </tr>
+
+          <tr style="height: 30px; background-color: white;"></tr>
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="asadullah khan 1.png" alt="" width="100%"
+                            style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color:black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Asadullah Khalil</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Noman Khalid Butt 1.png" alt="" width="100%"
+                            style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Noman Khalid Butt</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Muhammad Muzzamil Kaleem 1.png" alt="" width="100%"
+                            style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Muzzamil Kaleem</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+
+          </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Iqra Saqib 1.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Iqra Saqib</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Sarmad Ali 1.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Sarmad Ali</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Muhammad Hanan Bin Asghar 1.png" alt="" width="100%"
+                            style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Hanan Bin Asghar</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+
+          </td>
+          </tr>
+
+
+
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Salman Tahir 1.png" alt="" width="100%"
+                            style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Salman Tahir</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="bilal ghanzanfer 1.png" alt="" width="100%"
+                            style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Bilal Ghazanfar</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <tr style="height: 20px;"></tr>
+
+
+        </tbody>
+      </table>
+
+      <!-- Page 9 -->
+      <!-- With Red Background -->
+      <!-- Employee Of The Month -->
+
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background: white;">
+        <tbody>
+          <tr>
+            <td style="text-align: right; background-color:#A10003;  padding:0 3em">
+              <p style="color:white; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color:white;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background:#A10003">
+        <tbody>
+          <tr style="height: 30px; background-color: white;"></tr>
+
+          <tr>
+            <td style="text-align: center;margin: 0 auto;">
+              <button class="button">
+                Employee Of The Month
+              </button>
+            </td>
+          </tr>
+
+          <tr style="height: 30px; background-color: white;"></tr>
+
+          <!-- Employee of the Month 
+         With Red Background -->
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Shakeel.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color:white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Shakeel Waheed</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">BD Executive
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Zaryab.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Zaryab Ilyas</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Associate SQA
+                            Engineer</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Ehsaan.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Ehsaan Amjad</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Associate SQA
+                            Engineer</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <tr>
+            <td>
+
+
+              <!-- Employee of the Month 
+                 With Red Background -->
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Umer Hanif.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Umer Hanif</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">SQA Engineer
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Aleem Anjum.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Aleem Anjum</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Full Stack Developer
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Faizan Khan.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Faizan Khan</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">SQA Engineer</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <!-- Employee of the Month 
+                 With Red Background -->
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Zaman Suhail.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Zaman Suhail</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">SQA Engineer
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Marium Fatima.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Marium Fatima</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">SR. Social Media
+                            Executive</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Abdul Saboor .png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Abdul Saboor</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">Software Engineer
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <tr style="height: 20px;"></tr>
+
+        </tbody>
+      </table>
+
+
+      <!-- Page 10-->
+      <!-- Employees Birthdays: -->
+      <!-- With White Background -->
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background:black;">
+        <tbody>
+          <tr>
+            <td style=" background-color:white; padding:0 3em">
+              <p style="color:#000; font-size: 15px; font-weight: 500; line-height:20px;">
+                Employees Birthdays:
+              </p>
+            </td>
+            <td style="text-align: right; background-color:white; padding:0 3em">
+              <p style="color:#000; font-size: 15px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color: black;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:white">
+        <tbody>
+          <tr style="height: 40px; background-color: white;"></tr>
+          <tr>
+            <td>
+              <p style="font-size: 24px; font-weight: 700;text-transform: uppercase;
+              padding:0.8em 1.8em;background-color: #A10003; color: white;
+              width:90%; max-width: 340px;">
+                Employees Birthdays:
+              </p>
+            </td>
+            <td style="text-align: center;">
+              <img src="Logo (3).png" alt="" width="100%" style="max-width: 130px;">
+            </td>
+          </tr>
+
+          <tr style="height: 10px; background-color: white;"></tr>
+        </tbody>
+      </table>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:white">
+        <tbody>
+          <tr>
+            <td style="padding: 0 3em;">
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px;">
+                As we continue to foster a close-knit and vibrant workplace culture, we take great pleasure in
+                celebrating the birthdays of our wonderful team members. Birthdays are an opportunity for us to come
+                together as a team and celebrate the amazing individuals that make up our Mammoth-AI family.
+              </p>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Sarmad.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color:black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Sarmad Moeen</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">1st august
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Noman.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            M Nouman</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">22 august</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Hamza.png" alt="" width="100%" style="max-width: 165px;  border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Hamza Sohail</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">12 august</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Ghazi.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color:black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Muaz Waseem</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">27 august
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Noreen.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Noreen Fatima</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">08 august</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Ayesha saeed.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: black;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Ayesha Saeed</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">29 august</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+          <tr style="height: 30px; background-color: white;"></tr>
+          </td>
+          </tr>
+
+          </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+
+
+      <!-- Page 11 -->
+      <!-- Employees Birthdays: -->
+      <!-- With Red Background -->
+
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background: white;">
+        <tbody>
+          <tr>
+            <td style="text-align: right; background-color:#A10003;  padding:0 3em">
+              <p style="color:white; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color:white;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background:#A10003">
+        <tbody>
+          <tr style="height: 50px; background-color: white;"></tr>
+
+          <!-- Employees Birthdays 
+               With Red Background -->
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Vaneeza.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color:white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Vaneeza Malik</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">06 august
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Umer Sohail.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Umer Sohail</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">12 august</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Zubaida .png" alt="" width="100%" style="max-width: 165px;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Zubaida Jabbar</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">1st september</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <tr>
+            <td>
+
+
+              <!-- Employees Birthdays 
+               With Red Background -->
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Syed.png" alt="" width="100%" style="max-width: 165px; ">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Syed Bilal Javaid</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">03 september
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Fasih.png" alt="" width="100%" style="max-width: 165px;border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Fasih Haider</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">09 september
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Amir.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Amir Ali</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">07 september</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <!-- Employees Birthdays 
+               With Red Background -->
+
+          <tr>
+            <td>
+
+          <tr>
+            <td class="three-columns">
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Manan.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                            Abdul Mannan</p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">08 september
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="column">
+                <tr>
+                  <td class="padding">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <img src="Ali afzal.png" alt="" width="100%" style="max-width: 165px; border-radius: 50%;">
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="color: white;">
+                          <p
+                            style="padding:15px 0px 5px 0px; font-size: 18px; font-weight: 500; margin: 0; line-height: 24px;">
+                           Ali Afzal
+                          </p>
+                          <p style="font-size: 13px;font-weight: 400; margin: 0;line-height: 19px;">10 september</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+             
+              
+
+
+            </td>
+          </tr>
+
+          </td>
+          </tr>
+
+          <tr style="height: 50px; background-color: white;"></tr>
+
+        </tbody>
+      </table>
+
+
+      <!-- Page 12 -->
+      <!-- With White Background -->
+      <!-- Launching the Kick-off AI3RP
+     Project: A New Era of Innovation
+     Begins! -->
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background:black;">
+        <tbody>
+          <tr>
+            <td style=" background-color:white; padding:0 3em">
+              <p style="color:#000; font-size: 14px; font-weight: 500; line-height:20px;">
+                Recent developments and updates
+              </p>
+            </td>
+            <td style="text-align: right; background-color:white; padding:0 3em">
+              <p style="color:#000; font-size: 15px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color: black;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:white">
+        <tbody>
+          <tr style="height: 40px; background-color: white;"></tr>
+          <tr>
+            <td>
+              <p style="font-size: 28px; font-weight: 700; text-transform: uppercase;padding:0.7em 1.8em;
+          background-color: #A10003; color: white;width:auto; max-width: 510px;">
+                Launching the Kick-off AI3RP
+                Project: A New Era of Innovation
+                Begins!
+              </p>
+            </td>
+          </tr>
+          <tr style="height: 10px; background-color: white;"></tr>
+
+          <tr>
+            <td style="padding: 0 3em;">
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px;">
+                We are thrilled to share a sneak peek into our latest initiative that's
+                set to revolutionize the way businesses operate – the AI-powered ERP
+                Project! <br>
+                Our dedicated team has been hard at work developing an innovative
+                AI-driven ERP solution that caters to businesses of all sizes and
+                industries. This cutting-edge system will empower you to make
+                data-driven decisions, enhance collaboration, and optimize resource
+                management like never before.<br>
+                Stay tuned for more updates as we embark on this exciting journey
+                to reshape the future of business operations through the power of AI
+                and ERP integration. The future is bright, and we can't wait to share
+                it with you!
+              </p>
+
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 1em 3em 3.8em 3em; text-align: center;">
+              <img src="3ndey.png" alt="" style="width: 100%; max-width: 306px; ">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Page 13 -->
+      <!-- With Red Background -->
+      <!-- 3NDEY EXCELS AT SEAMLESS MIDDLE EAST & SAUDI ARABIA EXHIBITION -->
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background: white;">
+        <tbody>
+          <tr>
+            <td style="text-align: right; background-color:#A10003; padding:0 3em">
+              <p style="color:white; font-size: 16px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color: white"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:#A10003">
+        <tbody>
+          <tr style="height: 40px; background: #A10003;"></tr>
+          <tr>
+            <td style="">
+              <p style="font-size: 30px; font-weight: 700;text-transform: uppercase;padding:0.7em 1.8em;
+                     background-color: white; color: black; width:auto; max-width: 480px;">
+                3ndey Excels at Seamless Middle East & Saudi Arabia Exhibition
+              </p>
+            </td>
+          </tr>
+          <tr style="height: 10px; background-color: white;"></tr>
+          <tr>
+            <td style="padding: 0 3em;">
+
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px; color: white;">
+                3ndey successfully participated in the Seamless Middle East & Saudi Arabia exhibition, held on September
+                4th and 5th, 2023, at the Riyadh Front Exhibition and Conference Center in Riyadh, Saudi Arabia.
+                Seamless is a premier global platform for fintech, payments, retail, e-commerce, home delivery, and
+                digital marketing, with an annual footfall of over 30,000 attendees. The conference featured insightful
+                presentations, panel discussions, and roundtables from regional and international experts.
+                <br>
+                3ndey took center stage to exhibit our state-of-the-art, AI-enabled ERP solutions. Our team gave live
+                demonstrations of our game-changing modules, including accounting, procurement, inventory, WMS, CRM,
+                POS, Self-checkout, HR, and Asset Management. We received overwhelmingly positive feedback from
+                attendees, many of whom expressed interest in how our solutions are shaping the future of omnichannel
+                sales in the B2C and B2B spaces.
+
+              </p>
+
+
+            </td>
+          </tr>
+          <td style="padding: 1em 3.2em 3em 3.2em;">
+            <img src="3ndey team.png" alt="" style="width: 100%; max-width: 750px;">
+          </td>
+        </tbody>
+      </table>
+
+      <!-- Page 14 -->
+      <!-- With White Background -->
+      <!-- DENTALWELL: NURTURING EMPLOYEE HEALTH THROUGH FREE CONSULTATION CAMP -->
+
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;background:black;">
+        <tbody>
+          <tr>
+            <td style="text-align: right; background-color:white; padding:0 3em">
+              <p style="color:#000; font-size: 15px; font-weight: 500; line-height:20px;">
+                NEWSLETTER - 2nd Edition
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 1px; background-color: black;"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:white">
+        <tbody>
+          <tr style="height: 40px; background-color: white;"></tr>
+          <tr>
+            <td>
+              <p style="font-size: 28px; font-weight: 700; text-transform: uppercase;padding:0.7em 1.8em;
+          background-color: #A10003; color: white;width:auto; max-width: 510px;">
+                DentalWell: Nurturing Employee Health through Free Consultation Camp
+              </p>
+            </td>
+          </tr>
+          <tr style="height: 10px; background-color: white;"></tr>
+          <tr>
+            <td style="padding: 0 3em;">
+              <p style="font-size: 17px; font-weight: 400; line-height: 22px;">
+                In our commitment to providing a healthy and supportive work environment, the Management organized a
+                complimentary Dental Health Consultation Camp for all employees on Friday, September 1, 2023, from 06:15
+                P.M. to 08:15 P.M. in the office basement. <br>
+                This was a great opportunity for everyone to prioritize their dental well-being. Employees had the
+                chance to consult with qualified dentists and receive personalized advice on maintaining good oral
+                health. The dentists also provided free dental checkups and cleanings.<br>
+                We believe that a healthy workforce is a productive workforce. We are committed to providing our
+                employees with the resources and support they need to stay healthy and happy.
+              </p>
+              <p style="font-size: 17px; font-weight: 500; line-height: 22px;color: black;">
+                Best Regards,<br>
+                Management - Mammoth AI
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 1em 2.7em 3em 2.7em;">
+              <img src="last.png" alt="" style="width: 100%; max-width: 750px;">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </center>
+
+
+
+
+</body>
+
+</html>
